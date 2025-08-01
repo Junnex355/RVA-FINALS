@@ -1,0 +1,163 @@
+.services-container {
+    background: #ABE2FE;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Header Section */
+  .services-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .logo-img {
+    width: 100px;
+    height: 92px;
+    margin-bottom: 10px;
+    justify-content: start;
+  }
+  
+  .logo-text {
+    font-family: "Jacquard24-Regular", sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #262626;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-family: "TaiHeritagePro-Regular", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    color: #312e2e;
+    text-align: center;
+  }
+  
+  /* Services Grid */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    z-index: 2;
+  }
+  
+  .service-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 45px;
+    aspect-ratio: 334/223;
+    object-fit: cover;
+  }
+  
+  .service-name {
+    font-family: "InriaSerif-Bold", sans-serif;
+    font-size: 1.5rem;
+    color: #262626;
+    text-decoration: underline;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us-section {
+    position: relative;
+    z-index: 2;
+    margin: 60px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+  }
+  
+  .why-choose-us-title {
+    font-family: "TaiHeritagePro-Regular", sans-serif;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .mission-statement {
+    font-family: "TaiHeritagePro-Regular", sans-serif;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    line-height: 1.6;
+    color: #000000;
+  }
+  
+  .mission-statement p {
+    margin-bottom: 15px;
+  }
+  
+  /* Background Images */
+  .background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .bg-image-top,
+  .bg-image-middle,
+  .bg-image-bottom {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+.bg-image-middle {
+  top: 100%;
+  transform: translateY(-50%);
+}
+  
+  .bg-image-bottom {
+    bottom: 0;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .services-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .service-card {
+      max-width: 100%;
+    }
+    
+    .mission-statement {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-text {
+      font-size: 2.5rem;
+    }
+    
+    .section-title {
+      font-size: 1.8rem;
+    }
+    
+    .service-name {
+      font-size: 1.2rem;
+    }
+  }

@@ -1,0 +1,161 @@
+/* Base Styles */
+.caskets-container {
+  background: #d9d9d9;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "SfPro-Regular", sans-serif;
+}
+
+/* Header Styles */
+.caskets-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  margin-bottom: 20px;
+
+}
+
+.logo-img {
+  width: 80px;
+  height: 74px;
+}
+
+.logo-text {
+  font-family: "Jacquard24-Regular", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #262626;
+  margin: 0;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  aspect-ratio: 1552/388;
+  object-fit: cover;
+}
+
+/* Content Styles */
+.caskets-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: "Poltawski Nowy",;
+  font-size: clamp(2rem, 6vw, 5rem);
+  text-align: center;
+  margin: 40px 0;
+  color: #000000;
+}
+
+/* Caskets Grid */
+.caskets-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.casket-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.casket-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.casket-info {
+  padding: 20px;
+}
+
+.casket-name {
+  font-family: "SfPro-Bold", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.casket-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.casket-features li {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.casket-features li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0000ff;
+}
+
+.casket-price {
+  font-family: "SfPro-Bold", sans-serif;
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #000000;
+}
+
+.view-button {
+  background: #0000ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-button:hover {
+  background: #0000cc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .caskets-grid {
+    flex-direction: column;
+  }
+  
+  .casket-card {
+    max-width: 100%;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .casket-features li {
+    font-size: 0.8rem;
+  }
+}
